@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --watch"
+    "dev": "webpack --watch --mode development"
   },
   "license": "ISC",
   "devDependencies": {
