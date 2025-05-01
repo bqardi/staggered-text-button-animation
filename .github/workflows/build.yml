@@ -25,6 +25,9 @@ jobs:
       - name: Run build
         run: npm run build
 
+      - name: Create CNAME file
+        run: echo "staggered-text-button-animation.suneseifert.dk" > ./docs/CNAME
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
