@@ -1,0 +1,28 @@
+.button {
+  --staggered-line-height: 1.5;
+
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+
+  /* Can also be display: grid if needed */
+  display: flex;
+
+  /* Don't remove! */
+  line-height: var(--staggered-line-height);
+}
+
+.letter-wrapper {
+  overflow: clip;
+}
+
+.letter {
+  display: inline-block;
+  text-shadow: 0px calc(1em * var(--staggered-line-height)) currentColor;
+  transition: transform var(--staggered-duration)
+    cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+.button:hover .letter {
+  transform: translateY(calc(-1em * var(--staggered-line-height)));
+}
