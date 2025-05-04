@@ -9,6 +9,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.5",
     "autoprefixer": "^10",
+    "copy-webpack-plugin": "^13",
     "css-loader": "^6",
     "html-webpack-plugin": "^5",
     "mini-css-extract-plugin": "^2",
